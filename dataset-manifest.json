@@ -1,0 +1,61 @@
+{
+  "name": "ghostfolio-ai-evals-public-dataset",
+  "version": "1.0.0",
+  "generatedAt": "2026-03-01T22:27:27.557Z",
+  "files": {
+    "goldenSet": "golden-set.json",
+    "categorySet": "category-set.json"
+  },
+  "summary": {
+    "goldenSet": {
+      "cases": 20,
+      "categories": {
+        "portfolio": 8,
+        "watchlist": 4,
+        "quotes": 5,
+        "safety": 3
+      },
+      "complexities": {
+        "single_tool": 11,
+        "multi_tool": 4,
+        "synthesis": 5
+      },
+      "difficulties": {
+        "straightforward": 13,
+        "edge_case": 3,
+        "ambiguous": 4
+      }
+    },
+    "categorySet": {
+      "cases": 58,
+      "categories": {
+        "memory": 7,
+        "mixed": 7,
+        "portfolio": 13,
+        "quotes": 12,
+        "safety": 10,
+        "watchlist": 9
+      },
+      "complexities": {
+        "single_tool": 30,
+        "synthesis": 20,
+        "multi_tool": 8
+      },
+      "difficulties": {
+        "straightforward": 20,
+        "ambiguous": 16,
+        "edge_case": 22
+      }
+    }
+  },
+  "recommendedGates": {
+    "goldenSet": {
+      "runOnPreCommit": true,
+      "targetPassRate": 1
+    },
+    "categorySet": {
+      "minPassRate": 0.8,
+      "minPerCategoryPassRate": 0.8
+    }
+  }
+}
