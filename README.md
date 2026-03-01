@@ -16,4 +16,6 @@ This directory contains a cleaned public release of Ghostfolio AI eval data.
 
 ## Usage
 
-- After implementing an AI agent in Ghostfolio, I suggest you ask an LLM agent to read these golden set files and setup a service to run them within your app.
+After implementing an AI agent in Ghostfolio, I suggest you ask an LLM agent to read these golden set files and setup a service to run them within your app.
+The agent should be guided to mock the internal services such that the testing harness can run your LLM's actual toolcalls against those services, rather than needing to mock the toolcalls. 
+The agent should know to seed the mocked services with the data shared in the JSON files.
